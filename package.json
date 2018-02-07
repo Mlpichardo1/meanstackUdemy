@@ -1,0 +1,22 @@
+{
+  "name": "meanstackudemy",
+  "version": "1.0.0",
+  "description": "Mean Stack Udemy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mlpichardo1/meanstackUdemy.git"
+  },
+  "author": "Manny Pichardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mlpichardo1/meanstackUdemy/issues"
+  },
+  "homepage": "https://github.com/Mlpichardo1/meanstackUdemy#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
