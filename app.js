@@ -10,8 +10,8 @@
 // console.log(answer);
 
 // goodbye();
+require("./api/data/dbconnection.js").open();
 
-// LECTURE 7 EXPRESS
 var express = require('express');
 var app = express();
 var path = require("path");
