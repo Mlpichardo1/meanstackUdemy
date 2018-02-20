@@ -50,6 +50,7 @@ module.exports.hotelGetOne = function(req, res) {
 module.exports.hotelAddOne = function(req, res) {
     var db = dbconn.get();
     var collection = db.collection('hotels');
+    var newHotel;
     
     console.log("POST new hotel ");
     console.log(req.body);
@@ -58,17 +59,16 @@ module.exports.hotelAddOne = function(req, res) {
         newHotel = req.body;
         newHotel.stars = parseInt(req.body.stars, 10);
         console.log(newHotel);
-        collection.insertOne(newHotel, function(err, repsonse){
-            console.log(repsonse);
+        collection.insertOne(newHotel, function(err, response){
+        console.log(response);
         res
-        .status(201)
-        .json(response.ops);
+            .status(201)
+            .json(response.ops);
         });
     } else {
          console.log("data missing from body");
         res
-        .status(400)
-        .json({message: "required message is missing"});
+            .status(400)
+            .json({message: "required message is missing"})
     }
-
-};
+}};
