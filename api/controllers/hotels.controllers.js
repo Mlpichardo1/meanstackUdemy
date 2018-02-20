@@ -71,4 +71,5 @@ module.exports.hotelAddOne = function(req, res) {
             .status(400)
             .json({message: "required message is missing"})
     }
-}};
+}
+};
