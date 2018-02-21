@@ -10,7 +10,7 @@
 // console.log(answer);
 
 // goodbye();
-require("./api/data/dbconnection.js").open();
+require("./api/data/db.js");
 
 var express = require('express');
 var app = express();
