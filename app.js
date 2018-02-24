@@ -1,15 +1,11 @@
-// require('./instantHello');
-// var goodbye = require("./talk/goodbye");
-// var talk = require("./talk");
-// var question = require("./talk/question");
+angular.module('myApp', ['ngRoute']);
 
-// talk.intro();
-// talk.hello('Manny');
+function config($routeProvider) {
+    $routeProvider.when('/', {
+        
+    });
+}
 
-// var answer = question.ask('What is the meaning of life?');
-// console.log(answer);
-
-// goodbye();
 require("./api/data/db.js");
 
 var express = require('express');
