@@ -1,9 +1,3 @@
-function config($routeProvider) {
-    $routeProvider.when('/', {
-        
-    });
-}
-
 require("./api/data/db.js");
 
 var express = require('express');
