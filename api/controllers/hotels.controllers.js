@@ -217,9 +217,4 @@ module.exports.hotelsUpdateOne = function(req, res) {
                     .json();
             }
         });
-    
-};
-
-
-
-
+    };
