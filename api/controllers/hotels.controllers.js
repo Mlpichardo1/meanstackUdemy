@@ -28,21 +28,21 @@ var runGeoQuery = function(req, res) {
     num : 5
   };
 
-  Hotel
-    .geoNear(point, geoOptions, function(err, results, stats) {
-      console.log('Geo Results', results);
-      console.log('Geo stats', stats);
-      if (err) {
-        console.log("Error finding hotels");
-        res
-          .status(500)
-          .json(err);
-      } else {
-        res
-          .status(200)
-          .json(results);
-      }
-    });
+  // Hotel
+  //   .geoNear(point, geoOptions, function(err, results, stats) {
+  //     console.log('Geo Results', results);
+  //     console.log('Geo stats', stats);
+  //     if (err) {
+  //       console.log("Error finding hotels");
+  //       res
+  //         .status(500)
+  //         .json(err);
+  //     } else {
+  //       res
+  //         .status(200)
+  //         .json(results);
+  //     }
+  //   });
 };
 
 module.exports.hotelsGetAll = function(req, res) {
