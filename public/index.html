@@ -10,18 +10,22 @@
 </head>
 <body>
   
-  <div ng-view></div>
-  
-  <h1>MEAN Hotel Page</h1>
-    
-     <footer>
-      <div class="container">
-  <p class="text-muted text-center">
+  <mh-navigation></mh-navigation>
+  <div class="container">
+    <div ng-view></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted text-center">
         <a href="http://fullstacktraining.com" target="_blank"><img src="/images/fullstacktraining_logo.png" height="26" alt="Full Stack Training"/></a>
       </p>
 
       <p class="text-muted text-center">
-  </div>
+        <small>&copy; 2016 Full Stack Training Ltd</small>
+      </p>
+    </div>
+  </footer>
     
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -32,5 +36,10 @@
   <script src="angular-app/hotel-display/hotel-display-controller.js"></script>
   <script src="angular-app/hotel-data-factory/hotel-data-factory.js"></script>
   <script src="angular-app/hotel-rating/hotel-rating.js"></script>
+  <script src="angular-app/register/register.js"></script>
+  <script src="angular-app/navigation-directive/navigation-directive.js"></script>
+  <script src="angular-app/login/login-controller.js"></script>
+  <script src="angular-app/auth/auth-factory.js"></script>
+  <script src="angular-app/auth/auth-interceptor.js"></script>
 </body>
 </html>
